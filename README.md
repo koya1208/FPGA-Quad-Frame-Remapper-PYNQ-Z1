@@ -102,7 +102,7 @@ PCから入力された1920×1080のフルHD映像。
 7. platform と component をBuildする  
 8. PC → PYNQ-Z1 HDMI入力  
    PYNQ-Z1 HDMI出力 → 外部ディスプレイ に接続  
-9. PYNQ-Z1の電源をON  
+9. PYNQ-Z1の電源を入れる。 
 10. Vitis上で実行する。4分割縮小映像が表示される。  
 
 ---
