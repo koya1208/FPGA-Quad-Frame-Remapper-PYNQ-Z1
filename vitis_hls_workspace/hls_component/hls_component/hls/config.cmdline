@@ -1,0 +1,3 @@
+relativeroot=C:/quad_frame_remapper/vitis_hls_workspace/hls_component
+original_argv=--mode hls --package --config C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_config.cfg --work_dir hls_component 
+

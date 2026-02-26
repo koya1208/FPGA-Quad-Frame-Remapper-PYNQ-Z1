@@ -1,0 +1,20 @@
+create libxil.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xadcps/src/libxadcps.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/vtc/src/libvtc.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/video_common/src/libvideo_common.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/usbps/src/libusbps.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/uartps/src/libuartps.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/sdps/src/libsdps.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/scuwdt/src/libscuwdt.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/scutimer/src/libscutimer.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/scugic/src/libscugic.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/quad_frame_remapper/src/libquad_frame_remapper.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/qspips/src/libqspips.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src/libgpiops.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/emacps/src/libemacps.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/dmaps/src/libdmaps.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/devcfg/src/libdevcfg.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/coresightps_dcc/src/libcoresightps_dcc.a
+addlib C:/quad_frame_remapper/vitis_embrdded_workspace/platform/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/axivdma/src/libaxivdma.a
+save
+end

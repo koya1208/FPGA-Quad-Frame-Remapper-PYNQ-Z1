@@ -1,0 +1,22 @@
+directive:1:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=quad_frame_remapper_XLX_SEP_ PragmaOptions=name=quad_frame_remapper_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=quad_frame_remapper
+        ^
+C:/quad_frame_remapper/quad_frame_remapper.cpp:54:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=quad_frame_remapper_XLX_SEP_ PragmaOptions=m_axi port=src offset=slave bundle=gmem0 depth=388800 max_read_burst_length=256 num_read_outstanding=4_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=src offset=slave bundle=gmem0 depth=388800 max_read_burst_length=256 num_read_outstanding=4
+        ^
+C:/quad_frame_remapper/quad_frame_remapper.cpp:55:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=quad_frame_remapper_XLX_SEP_ PragmaOptions=m_axi port=dst offset=slave bundle=gmem1 depth=388800 max_write_burst_length=32 num_write_outstanding=2_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=dst offset=slave bundle=gmem1 depth=388800 max_write_burst_length=32 num_write_outstanding=2
+        ^
+C:/quad_frame_remapper/quad_frame_remapper.cpp:57:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=quad_frame_remapper_XLX_SEP_ PragmaOptions=s_axilite port=src bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=src bundle=control
+        ^
+C:/quad_frame_remapper/quad_frame_remapper.cpp:58:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=quad_frame_remapper_XLX_SEP_ PragmaOptions=s_axilite port=dst bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=dst bundle=control
+        ^
+C:/quad_frame_remapper/quad_frame_remapper.cpp:59:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=quad_frame_remapper_XLX_SEP_ PragmaOptions=s_axilite port=size_in_16bytes bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=size_in_16bytes bundle=control
+        ^
+C:/quad_frame_remapper/quad_frame_remapper.cpp:60:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=quad_frame_remapper_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=return bundle=control
+        ^
+7 warnings generated.

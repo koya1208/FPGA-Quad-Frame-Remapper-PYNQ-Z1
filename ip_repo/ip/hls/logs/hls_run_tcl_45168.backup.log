@@ -1,0 +1,157 @@
+  **** HLS Build v2025.1 6135595
+Sourcing Tcl script 'C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/script.tcl'
+INFO: [HLS 200-1510] Running: open_project color_convert 
+WARNING: [HLS 200-2182] The 'color_convert' project will not automatically appear within Vitis IDE workspaces and is meant only for TCL batch use.  Please use open_component instead of open_project/open_solution to generate Vitis IDE compatible component files and directory structure.
+Resolution: For help on HLS 200-2182 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-2182.html
+INFO: [HLS 200-10] Creating and opening solution 'C:/Users/blaza/PYNQ/boards/ip/hls/color_convert'.
+INFO: [HLS 200-1510] Running: set_top color_convert 
+INFO: [HLS 200-1510] Running: add_files color_convert/color_convert.cpp 
+INFO: [HLS 200-10] Adding design file 'color_convert/color_convert.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb color_convert/color_convert_test.cpp 
+INFO: [HLS 200-10] Adding test bench file 'color_convert/color_convert_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 
+INFO: [HLS 200-10] Creating and opening solution 'C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 7 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.736 seconds; current allocated memory: 138.586 MB.
+INFO: [HLS 200-10] Analyzing design file 'color_convert/color_convert.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.741 seconds; current allocated memory: 141.504 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 4,905 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 606 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 293 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 291 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 282 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 285 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 285 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 285 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 285 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 395 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 405 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 395 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 325 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 325 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 311 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 273 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-210] Disaggregating variable 'c1' (color_convert/color_convert.cpp:8:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'c2' (color_convert/color_convert.cpp:8:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'c3' (color_convert/color_convert.cpp:8:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'bias' (color_convert/color_convert.cpp:8:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-178] Inlining function 'channels::channels(ap_uint<24>)' into 'color_convert(hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, coeffs&, coeffs&, coeffs&, coeffs&)' (color_convert/color_convert.cpp:8:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.452 seconds; current allocated memory: 143.289 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 143.289 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.047 seconds; current allocated memory: 147.395 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 149.504 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (color_convert/color_convert.cpp:21:9) to (color_convert/color_convert.cpp:40:1) in function 'color_convert'... converting 7 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 170.961 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.085 seconds; current allocated memory: 170.969 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'color_convert' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'color_convert' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln34) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln32) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'color_convert'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, function 'color_convert'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.441 seconds; current allocated memory: 170.969 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.075 seconds; current allocated memory: 170.969 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'color_convert' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_in_24_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_in_24_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_in_24_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_in_24_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_in_24_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_out_24_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_out_24_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_out_24_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_out_24_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_out_24_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c1_c1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c1_c2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c1_c3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c2_c1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c2_c2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c2_c3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c3_c1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c3_c2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c3_c3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/bias_c1' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/bias_c2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/bias_c3' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'color_convert' to 'ap_ctrl_none'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'color_convert' pipeline 'color_convert' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Bundling port 'c1_c1', 'c1_c2', 'c1_c3', 'c2_c1', 'c2_c2', 'c2_c3', 'c3_c1', 'c3_c2', 'c3_c3', 'bias_c1', 'bias_c2' and 'bias_c3' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_10s_8ns_18s_19_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_10s_8ns_19s_20_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_10s_8ns_18_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'color_convert'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.262 seconds; current allocated memory: 173.816 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.002 seconds; current allocated memory: 180.777 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.038 seconds; current allocated memory: 184.715 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for color_convert.
+INFO: [VLOG 209-307] Generating Verilog RTL for color_convert.
+INFO: [HLS 200-789] **** Estimated Fmax: 221.24 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:23; Allocated memory: 46.461 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -description Color conversion for 24-bit AXI video stream -display_name Color Convert 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Tue Aug 19 23:10:41 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/solution1_data.json outdir=C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/impl/ip srcdir=C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1 ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/impl/ip/misc
+INFO: Copied 8 verilog file(s) to C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/impl/ip/hdl/verilog
+INFO: Copied 6 vhdl file(s) to C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/impl/ip/drivers
+INFO: Import ports from HDL: C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/impl/ip/hdl/vhdl/color_convert.vhd (color_convert)
+INFO: Add axi4lite interface s_axi_control
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add axi4stream interface stream_in_24
+INFO: Add axi4stream interface stream_out_24
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/impl/ip/component.xml
+INFO: Created IP archive C:/Users/blaza/PYNQ/boards/ip/hls/color_convert/solution1/impl/ip/xilinx_com_hls_color_convert_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 19 23:10:49 2025...
+INFO: [HLS 200-802] Generated output file color_convert/solution1/impl/export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:09; Allocated memory: 4.406 MB.
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 2 seconds. Total elapsed time: 38.37 seconds; peak allocated memory: 189.125 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 41s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

@@ -1,0 +1,4 @@
+set(DRIVER_INSTANCES "quad_frame_remapper@40000000")
+set(DRIVER_PROP_0_LIST "xlnx,quad-frame-remapper-1.0;0x40000000")
+set(DRIVER_OPTPROP_0_LIST "")
+list(APPEND TOTAL_DRIVER_PROP_LIST DRIVER_PROP_0_LIST)

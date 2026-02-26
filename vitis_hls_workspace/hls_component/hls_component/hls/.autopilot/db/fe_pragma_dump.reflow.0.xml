@@ -1,0 +1,8 @@
+<pragmas>
+<pragma file="C:/quad_frame_remapper/quad_frame_remapper.cpp" line="54" pragmaType="interface" parentfunction="quad_frame_remapper" mode="m_axi" port="src" bundle="gmem0" offset="slave" name="" depth="388800" num_read_outstanding="4" num_write_outstanding="-1" max_burst_read_length="256" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="C:/quad_frame_remapper/quad_frame_remapper.cpp" line="55" pragmaType="interface" parentfunction="quad_frame_remapper" mode="m_axi" port="dst" bundle="gmem1" offset="slave" name="" depth="388800" num_read_outstanding="-1" num_write_outstanding="2" max_burst_read_length="-1" max_burst_write_length="32" latency="-1" max_widen_bitwidth="-1" channel=""/>
+<pragma file="C:/quad_frame_remapper/quad_frame_remapper.cpp" line="57" pragmaType="interface" parentfunction="quad_frame_remapper" mode="s_axilite" port="src" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="C:/quad_frame_remapper/quad_frame_remapper.cpp" line="58" pragmaType="interface" parentfunction="quad_frame_remapper" mode="s_axilite" port="dst" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="C:/quad_frame_remapper/quad_frame_remapper.cpp" line="59" pragmaType="interface" parentfunction="quad_frame_remapper" mode="s_axilite" port="size_in_16bytes" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="C:/quad_frame_remapper/quad_frame_remapper.cpp" line="60" pragmaType="interface" parentfunction="quad_frame_remapper" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+</pragmas>

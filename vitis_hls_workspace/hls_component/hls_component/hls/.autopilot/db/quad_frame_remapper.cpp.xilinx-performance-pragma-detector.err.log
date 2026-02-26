@@ -1,0 +1,3 @@
+C:\quad_frame_remapper\quad_frame_remapper.cpp:37:10: fatal error: 'string.h' file not found
+#include <string.h>
+         ^~~~~~~~~~

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Feb 26 11:47:56 2026
+# Process ID         : 17104
+# Current directory  : C:/quad_frame_remapper/quad_frame_remapper.runs/project1_axi_interconnect_0_imp_auto_cc_0_synth_1
+# Command line       : vivado.exe -log project1_axi_interconnect_0_imp_auto_cc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source project1_axi_interconnect_0_imp_auto_cc_0.tcl
+# Log file           : C:/quad_frame_remapper/quad_frame_remapper.runs/project1_axi_interconnect_0_imp_auto_cc_0_synth_1/project1_axi_interconnect_0_imp_auto_cc_0.vds
+# Journal file       : C:/quad_frame_remapper/quad_frame_remapper.runs/project1_axi_interconnect_0_imp_auto_cc_0_synth_1\vivado.jou
+# Running On         : koyanagi
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 PRO 8840HS w/ Radeon 780M Graphics 
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 29706 MB
+# Swap memory        : 18253 MB
+# Total Virtual      : 47960 MB
+# Available Virtual  : 10824 MB
+#-----------------------------------------------------------
+source project1_axi_interconnect_0_imp_auto_cc_0.tcl -notrace

@@ -1,0 +1,661 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_quad_frame_remapper_ir
+Args:            
+  - Callee:          quad_frame_remapper
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 52, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_quad_frame_remapper_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 140, Column: 34 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          line_buf_out
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 141, Column: 34 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          line_buf_out
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 142, Column: 34 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          line_buf_out
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 154, Column: 34 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          line_buf_out
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 155, Column: 34 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          line_buf_out
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 156, Column: 34 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          line_buf_out
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 107, Column: 13 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '360'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       dst
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:107:13'
+  - String:          ' '
+  - Function:        quad_frame_remapper
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 52, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+  - OrigDirection:   write
+  - OrigID:          load-store-loop7.store.6
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 123, Column: 9 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '360'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep3seq
+  - ArrayName:       src
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:123:9'
+  - String:          ' '
+  - Function:        quad_frame_remapper
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 52, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+  - OrigDirection:   read
+  - OrigID:          load-store-loop4.load.4
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 160, Column: 9 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '360'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep4seq
+  - ArrayName:       dst
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:160:9'
+  - String:          ' '
+  - Function:        quad_frame_remapper
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 52, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+  - OrigDirection:   write
+  - OrigID:          load-store-loop.store.6
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 123, Column: 9 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          'Access '
+  - Access:          call
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 123, Column: 9 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 123, Column: 9 }
+  - OrigDirection:   read
+  - OrigID:          scevgep3seq
+  - ArrayName:       src
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_91_1
+  - String:          ' '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:91:22'
+  - String:          ' '
+  - Function:        quad_frame_remapper
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 52, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 160, Column: 9 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          'Access '
+  - Access:          call
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 160, Column: 9 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 160, Column: 9 }
+  - OrigDirection:   write
+  - OrigID:          scevgep4seq
+  - ArrayName:       dst
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_91_1
+  - String:          ' '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:91:22'
+  - String:          ' '
+  - Function:        quad_frame_remapper
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 52, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 107, Column: 13 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          'Access '
+  - Access:          call
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 107, Column: 13 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 107, Column: 13 }
+  - OrigDirection:   write
+  - OrigID:          scevgepseq
+  - ArrayName:       dst
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_91_1
+  - String:          ' '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:91:22'
+  - String:          ' '
+  - Function:        quad_frame_remapper
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 52, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 107, Column: 13 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i128
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 107, Column: 13 }
+  - OrigDirection:   write
+  - OrigID:          scevgepseq
+  - ArrayName:       dst
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:107:13'
+  - String:          ' '
+  - Function:        quad_frame_remapper
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 52, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 160, Column: 9 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i128
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 160, Column: 9 }
+  - OrigDirection:   write
+  - OrigID:          scevgep4seq
+  - ArrayName:       dst
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:160:9'
+  - String:          ' '
+  - Function:        quad_frame_remapper
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 52, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 123, Column: 9 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i128
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 123, Column: 9 }
+  - OrigDirection:   read
+  - OrigID:          scevgep3seq
+  - ArrayName:       src
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:123:9'
+  - String:          ' '
+  - Function:        quad_frame_remapper
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 52, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 140, Column: 34 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          line_buf_out
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 141, Column: 34 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          line_buf_out
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 142, Column: 34 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          line_buf_out
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 154, Column: 34 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          line_buf_out
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 155, Column: 34 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          line_buf_out
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-syncheck
+Name:            WarningOutOfBoundArrayAccess
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 156, Column: 34 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          The program may have out of bound array access
+  - String:          ' on variable '''
+  - String:          line_buf_out
+  - String:          ''''
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:107:13'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         ''
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:160:9'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_146_3
+  - String:          '> at '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:146:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_132_2
+  - String:          '> at '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:132:27'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         ''
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        unknown
+  - String:          '> at '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:123:9'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 107, Column: 13 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '360'
+  - String:          ' and bit width '
+  - Width:           '128'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:107:13'
+  - String:          ' '
+  - Function:        quad_frame_remapper
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 52, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 107, Column: 13 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '360'
+  - String:          ' and bit width '
+  - Width:           '128'
+  - String:          ' in loop '''
+  - LoopName:        anonymous
+  - String:          '''('
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:107:13'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem1
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 123, Column: 9 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '360'
+  - String:          ' and bit width '
+  - Width:           '128'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:123:9'
+  - String:          ' '
+  - Function:        quad_frame_remapper
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 52, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 123, Column: 9 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '360'
+  - String:          ' and bit width '
+  - Width:           '128'
+  - String:          ' in loop '''
+  - LoopName:        anonymous
+  - String:          '''('
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:123:9'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 160, Column: 9 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '360'
+  - String:          ' and bit width '
+  - Width:           '128'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        anonymous
+  - String:          ' '
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:160:9'
+  - String:          ' '
+  - Function:        quad_frame_remapper
+    DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                       Line: 52, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: 'C:/quad_frame_remapper/quad_frame_remapper.cpp', 
+                   Line: 160, Column: 9 }
+Function:        quad_frame_remapper
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '360'
+  - String:          ' and bit width '
+  - Width:           '128'
+  - String:          ' in loop '''
+  - LoopName:        anonymous
+  - String:          '''('
+  - LoopLoc:         'C:/quad_frame_remapper/quad_frame_remapper.cpp:160:9'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem1
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

@@ -1,0 +1,20 @@
+{
+  "0": {
+    "basicblocks": 31,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 7,
+    "file": "quad_frame_remapper.cpp",
+    "fileloc": 48,
+    "instructions": 161,
+    "loads": {
+      "L": 6
+    },
+    "memory_accesses": 12,
+    "name": "quad_frame_remapper",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 161
+  }
+}

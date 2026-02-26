@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "C:/quad_frame_remapper\\vitis_hls_workspace\\hls_component\\hls_component\\hls_component.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "02/25/26 19:26:20",
+ "timestampMillis": "1772015180532",
+ "buildStep": {
+  "cmdId": "df993fba-43a0-46c9-9f6b-2d132d375c58",
+  "name": "v++",
+  "logFile": "C:/quad_frame_remapper\\vitis_hls_workspace\\hls_component\\hls_component\\logs\\hls_component.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\quad_frame_remapper\\vitis_hls_workspace\\hls_component\\hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\quad_frame_remapper\\vitis_hls_workspace\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/quad_frame_remapper\\vitis_hls_workspace\\hls_component\\hls_config.cfg",
+    "content": "part=xc7z020clg400-1\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.file=C:/quad_frame_remapper/quad_frame_remapper.cpp\ntb.file=C:/quad_frame_remapper/quad_frame_remapper_tb.cpp\nsyn.top=quad_frame_remapper"
+   }
+  ],
+  "cwd": "C:\\quad_frame_remapper\\vitis_hls_workspace\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/25/26 19:26:20",
+ "timestampMillis": "1772015180533",
+ "status": {
+  "cmdId": "df993fba-43a0-46c9-9f6b-2d132d375c58",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "02/25/26 19:26:27",
+ "timestampMillis": "1772015187017",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "quad_frame_remapper",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/quad_frame_remapper\\quad_frame_remapper.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "02/25/26 19:26:27",
+ "timestampMillis": "1772015187019",
+ "buildStep": {
+  "cmdId": "5c6f91fa-0480-4a44-a0d4-0f8a2e761cee",
+  "name": "",
+  "logFile": "C:/quad_frame_remapper\\vitis_hls_workspace\\hls_component\\hls_component\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\quad_frame_remapper\\vitis_hls_workspace\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/25/26 19:26:27",
+ "timestampMillis": "1772015187019",
+ "status": {
+  "cmdId": "5c6f91fa-0480-4a44-a0d4-0f8a2e761cee",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/25/26 19:26:27",
+ "timestampMillis": "1772015187019",
+ "report": {
+  "path": "C:/quad_frame_remapper\\vitis_hls_workspace\\hls_component\\hls_component\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/25/26 19:26:27",
+ "timestampMillis": "1772015187020",
+ "report": {
+  "path": "C:/quad_frame_remapper\\vitis_hls_workspace\\hls_component\\hls_component\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/25/26 19:26:27",
+ "timestampMillis": "1772015187021",
+ "report": {
+  "path": "C:/quad_frame_remapper\\vitis_hls_workspace\\hls_component\\hls_component\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/25/26 19:27:01",
+ "timestampMillis": "1772015221385",
+ "report": {
+  "path": "C:/quad_frame_remapper\\vitis_hls_workspace\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/25/26 19:27:01",
+ "timestampMillis": "1772015221386",
+ "report": {
+  "path": "C:/quad_frame_remapper\\vitis_hls_workspace\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/25/26 19:27:01",
+ "timestampMillis": "1772015221386",
+ "report": {
+  "path": "C:/quad_frame_remapper\\vitis_hls_workspace\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/25/26 19:27:01",
+ "timestampMillis": "1772015221386",
+ "status": {
+  "cmdId": "5c6f91fa-0480-4a44-a0d4-0f8a2e761cee",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "02/25/26 19:27:01",
+ "timestampMillis": "1772015221582",
+ "status": {
+  "cmdId": "df993fba-43a0-46c9-9f6b-2d132d375c58",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/25/26 19:27:01",
+ "timestampMillis": "1772015221625",
+ "report": {
+  "path": "C:/quad_frame_remapper\\vitis_hls_workspace\\hls_component\\hls_component\\reports\\v++_compile_hls_component_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "02/25/26 19:27:01",
+ "timestampMillis": "1772015221626",
+ "report": {
+  "path": "C:/quad_frame_remapper\\vitis_hls_workspace\\hls_component\\hls_component\\reports\\.db\\v++_compile_hls_component_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

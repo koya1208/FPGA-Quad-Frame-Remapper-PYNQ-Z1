@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Feb 25 19:27:31 2026
+# Process ID         : 40028
+# Current directory  : C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/impl/ip/vivado.log
+# Journal file       : C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/impl/ip\vivado.jou
+# Running On         : koyanagi
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 PRO 8840HS w/ Radeon 780M Graphics 
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 29706 MB
+# Swap memory        : 18253 MB
+# Total Virtual      : 47960 MB
+# Available Virtual  : 10945 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/hls_data.json outdir=C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/impl/ip srcdir=C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/impl/ip/misc
+INFO: Copied 16 verilog file(s) to C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/impl/ip/hdl/verilog
+INFO: Copied 15 vhdl file(s) to C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/impl/ip/drivers
+ipx::create_core: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 501.012 ; gain = 207.859
+INFO: Import ports from HDL: C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/impl/ip/hdl/vhdl/quad_frame_remapper.vhd (quad_frame_remapper)
+INFO: Add axi4lite interface s_axi_control
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+INFO: Add axi4full interface m_axi_gmem0
+INFO: Add axi4full interface m_axi_gmem1
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/impl/ip/component.xml
+INFO: Created IP archive C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/impl/ip/xilinx_com_hls_quad_frame_remapper_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 25 19:27:55 2026...

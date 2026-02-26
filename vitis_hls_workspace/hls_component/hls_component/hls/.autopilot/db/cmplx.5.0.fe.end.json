@@ -1,0 +1,170 @@
+{
+    "1": {
+        "name": "quad_frame_remapper_Pipeline_4",
+        "file": "quad_frame_remapper.cpp",
+        "fileloc": "0",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "quad_frame_remapper",
+        "file": "quad_frame_remapper.cpp",
+        "fileloc": "48",
+        "instructions": "84",
+        "total_instructions": "364",
+        "calls": "2 6 3 1 4 5 7",
+        "basicblocks": "7",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "quad_frame_remapper_Pipeline_1",
+        "file": "quad_frame_remapper.cpp",
+        "fileloc": "0",
+        "instructions": "16",
+        "total_instructions": "16",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "3",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "quad_frame_remapper_Pipeline_3",
+        "file": "C:\/quad_frame_remapper\/quad_frame_remapper.cpp",
+        "fileloc": "123",
+        "instructions": "21",
+        "total_instructions": "21",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "4",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "quad_frame_remapper_Pipeline_VITIS_LOOP_132_2",
+        "file": "C:\/quad_frame_remapper\/quad_frame_remapper.cpp",
+        "fileloc": "132",
+        "instructions": "90",
+        "total_instructions": "90",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "8",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "quad_frame_remapper_Pipeline_VITIS_LOOP_146_3",
+        "file": "C:\/quad_frame_remapper\/quad_frame_remapper.cpp",
+        "fileloc": "146",
+        "instructions": "93",
+        "total_instructions": "93",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "8",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "quad_frame_remapper_Pipeline_2",
+        "file": "C:\/quad_frame_remapper\/quad_frame_remapper.cpp",
+        "fileloc": "107",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "4",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "quad_frame_remapper_Pipeline_7",
+        "file": "C:\/quad_frame_remapper\/quad_frame_remapper.cpp",
+        "fileloc": "160",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "4",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp:2255:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp:2255:5: note: FIX-IT applied suggested code changes
+C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp:2269:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp:2269:5: note: FIX-IT applied suggested code changes
+C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp:2283:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp:2283:5: note: FIX-IT applied suggested code changes
+C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp:4251:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp:4251:7: note: FIX-IT applied suggested code changes
+C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp:6608:5: warning: Added loop label VITIS_LOOP_91_1:   [xilinx-label-all-loops]
+    for (int y = 0; y < HEIGHT; y++) {
+    ^~~
+    VITIS_LOOP_91_1: 
+C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp:6608:5: note: FIX-IT applied suggested code changes
+C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp:6649:9: warning: Added loop label VITIS_LOOP_132_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < SCALED_W; i++) {
+        ^~~
+        VITIS_LOOP_132_2: 
+C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp:6649:9: note: FIX-IT applied suggested code changes
+C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp:6663:9: warning: Added loop label VITIS_LOOP_146_3:   [xilinx-label-all-loops]
+        for (int i = 0; i < SCALED_W; i++) {
+        ^~~
+        VITIS_LOOP_146_3: 
+C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp:6663:9: note: FIX-IT applied suggested code changes

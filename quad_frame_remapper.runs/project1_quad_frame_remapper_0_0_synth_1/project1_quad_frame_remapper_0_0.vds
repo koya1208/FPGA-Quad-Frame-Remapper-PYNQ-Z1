@@ -1,0 +1,711 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Feb 26 11:47:56 2026
+# Process ID         : 33624
+# Current directory  : C:/quad_frame_remapper/quad_frame_remapper.runs/project1_quad_frame_remapper_0_0_synth_1
+# Command line       : vivado.exe -log project1_quad_frame_remapper_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source project1_quad_frame_remapper_0_0.tcl
+# Log file           : C:/quad_frame_remapper/quad_frame_remapper.runs/project1_quad_frame_remapper_0_0_synth_1/project1_quad_frame_remapper_0_0.vds
+# Journal file       : C:/quad_frame_remapper/quad_frame_remapper.runs/project1_quad_frame_remapper_0_0_synth_1\vivado.jou
+# Running On         : koyanagi
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 PRO 8840HS w/ Radeon 780M Graphics 
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 29706 MB
+# Swap memory        : 18253 MB
+# Total Virtual      : 47960 MB
+# Available Virtual  : 10789 MB
+#-----------------------------------------------------------
+source project1_quad_frame_remapper_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 492.043 ; gain = 213.090
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Definition IP file 'digilentinc.com:interface:tmds:1.0' found within IP repository 'c:/quad_frame_remapper/ip_repo'.
+File in use: c:/quad_frame_remapper/ip_repo/ip/if/tmds_v1_0/tmds.xml
+File ignored: c:/quad_frame_remapper/ip_repo/vivado-library-master/if/tmds_v1_0/tmds.xml
+WARNING: [IP_Flow 19-1694] Ignoring duplicate Bus Abstraction IP file 'digilentinc.com:interface:tmds_rtl:1.0' found within IP repository 'c:/quad_frame_remapper/ip_repo'.
+File in use: c:/quad_frame_remapper/ip_repo/ip/if/tmds_v1_0/tmds_rtl.xml
+File ignored: c:/quad_frame_remapper/ip_repo/vivado-library-master/if/tmds_v1_0/tmds_rtl.xml
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/quad_frame_remapper/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 495.969 ; gain = 3.926
+Command: synth_design -top project1_quad_frame_remapper_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 31396
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1243.973 ; gain = 493.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'project1_quad_frame_remapper_0_0' [c:/project9/project1.gen/sources_1/bd/project1/ip/project1_quad_frame_remapper_0_0/synth/project1_quad_frame_remapper_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper.v:9]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_line_buf_in_RAM_1WNR_AUTO_1R1W' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_line_buf_in_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_line_buf_in_RAM_1WNR_AUTO_1R1W' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_line_buf_in_RAM_1WNR_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_line_buf_out_RAM_AUTO_1R1W' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_line_buf_out_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_line_buf_out_RAM_AUTO_1R1W' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_line_buf_out_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_quad_frame_remapper_Pipeline_1' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_quad_frame_remapper_Pipeline_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_flow_control_loop_pipe_sequential_init' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_flow_control_loop_pipe_sequential_init' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_quad_frame_remapper_Pipeline_1' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_quad_frame_remapper_Pipeline_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_quad_frame_remapper_Pipeline_3' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_quad_frame_remapper_Pipeline_3.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_quad_frame_remapper_Pipeline_3' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_quad_frame_remapper_Pipeline_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_quad_frame_remapper_Pipeline_4' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_quad_frame_remapper_Pipeline_4.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_quad_frame_remapper_Pipeline_4' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_quad_frame_remapper_Pipeline_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_quad_frame_remapper_Pipeline_VITIS_LOOP_132_2' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_quad_frame_remapper_Pipeline_VITIS_LOOP_132_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_quad_frame_remapper_Pipeline_VITIS_LOOP_132_2' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_quad_frame_remapper_Pipeline_VITIS_LOOP_132_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_quad_frame_remapper_Pipeline_VITIS_LOOP_146_3' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_quad_frame_remapper_Pipeline_VITIS_LOOP_146_3.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_quad_frame_remapper_Pipeline_VITIS_LOOP_146_3' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_quad_frame_remapper_Pipeline_VITIS_LOOP_146_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_quad_frame_remapper_Pipeline_7' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_quad_frame_remapper_Pipeline_7.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_quad_frame_remapper_Pipeline_7' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_quad_frame_remapper_Pipeline_7.v:9]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_quad_frame_remapper_Pipeline_2' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_quad_frame_remapper_Pipeline_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_quad_frame_remapper_Pipeline_2' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_quad_frame_remapper_Pipeline_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_control_s_axi' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_control_s_axi.v:224]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_control_s_axi' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem0_m_axi' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem0_m_axi_load' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem0_m_axi_fifo' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem0_m_axi_srl' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem0_m_axi_srl' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem0_m_axi_fifo' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem0_m_axi_fifo__parameterized0' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem0_m_axi_mem' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:2354]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem0_m_axi_mem' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:2354]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem0_m_axi_fifo__parameterized0' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem0_m_axi_load' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem0_m_axi_read' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:782]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem0_m_axi_fifo__parameterized1' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem0_m_axi_srl__parameterized0' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem0_m_axi_srl__parameterized0' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:2314]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem0_m_axi_fifo__parameterized1' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:2101]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem0_m_axi_burst_converter' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:1036]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem0_m_axi_burst_sequential' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:1642]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem0_m_axi_reg_slice' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem0_m_axi_reg_slice' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem0_m_axi_burst_sequential' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:1642]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem0_m_axi_burst_converter' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:1036]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem0_m_axi_reg_slice__parameterized0' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem0_m_axi_reg_slice__parameterized0' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:1997]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem0_m_axi_read' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:782]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem0_m_axi' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_store' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_fifo' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_srl' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_srl' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_fifo' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_fifo__parameterized0' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_srl__parameterized0' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_srl__parameterized0' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_fifo__parameterized0' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_fifo__parameterized1' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_mem' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2979]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_mem' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2979]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_fifo__parameterized1' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_fifo__parameterized2' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_srl__parameterized1' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_srl__parameterized1' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_fifo__parameterized2' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_fifo__parameterized3' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_srl__parameterized2' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_srl__parameterized2' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_fifo__parameterized3' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_store' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_write' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:1099]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_burst_converter' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:1394]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_burst_sequential' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2000]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_reg_slice' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_reg_slice' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_burst_sequential' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2000]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_burst_converter' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:1394]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_throttle' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2353]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_fifo__parameterized4' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_srl__parameterized3' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_srl__parameterized3' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2939]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_fifo__parameterized4' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2726]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_reg_slice__parameterized0' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_reg_slice__parameterized0' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_reg_slice__parameterized1' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_reg_slice__parameterized1' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_throttle' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2353]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_gmem1_m_axi_reg_slice__parameterized2' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_reg_slice__parameterized2' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2622]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi_write' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:1099]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_gmem1_m_axi' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'quad_frame_remapper_mul_11ns_10ns_19_1_1' [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_mul_11ns_10ns_19_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper_mul_11ns_10ns_19_1_1' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_mul_11ns_10ns_19_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'quad_frame_remapper' (0#1) [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'project1_quad_frame_remapper_0_0' (0#1) [c:/project9/project1.gen/sources_1/bd/project1/ip/project1_quad_frame_remapper_0_0/synth/project1_quad_frame_remapper_0_0.v:53]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_control_s_axi.v:299]
+WARNING: [Synth 8-6014] Unused sequential element last_sect_buf_reg was removed.  [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem0_m_axi.v:1839]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-7129] Port raddr[0] in module quad_frame_remapper_gmem1_m_axi_srl__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[7] in module quad_frame_remapper_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[6] in module quad_frame_remapper_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[5] in module quad_frame_remapper_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[4] in module quad_frame_remapper_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[3] in module quad_frame_remapper_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[2] in module quad_frame_remapper_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[1] in module quad_frame_remapper_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BURST_AWLEN[0] in module quad_frame_remapper_gmem1_m_axi_throttle is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[0] in module quad_frame_remapper_gmem1_m_axi_srl__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BID[0] in module quad_frame_remapper_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[1] in module quad_frame_remapper_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BRESP[0] in module quad_frame_remapper_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_BUS_BUSER[0] in module quad_frame_remapper_gmem1_m_axi_write is either unconnected or has no load
+WARNING: [Synth 8-7129] Port raddr[0] in module quad_frame_remapper_gmem1_m_axi_srl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARREADY in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RID[0] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[127] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[126] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[125] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[124] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[123] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[122] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[121] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[120] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[119] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[118] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[117] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[116] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[115] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[114] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[113] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[112] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[111] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[110] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[109] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[108] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[107] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[106] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[105] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[104] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[103] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[102] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[101] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[100] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[99] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[98] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[97] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[96] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[95] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[94] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[93] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[92] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[91] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[90] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[89] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[88] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[87] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[86] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[85] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[84] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[83] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[82] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[81] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[80] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[79] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[78] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[77] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[76] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[75] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[74] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[73] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[72] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[71] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[70] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[69] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[68] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[67] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[66] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[65] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[64] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[63] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[62] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[61] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[60] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[59] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[58] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[57] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[56] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[55] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[54] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[53] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[52] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[51] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[50] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[49] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[48] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[47] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[46] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RDATA[45] in module quad_frame_remapper_gmem1_m_axi is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1404.816 ; gain = 654.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1404.816 ; gain = 654.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1404.816 ; gain = 654.254
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.317 . Memory (MB): peak = 1404.816 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/project9/project1.gen/sources_1/bd/project1/ip/project1_quad_frame_remapper_0_0/constraints/quad_frame_remapper_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/project9/project1.gen/sources_1/bd/project1/ip/project1_quad_frame_remapper_0_0/constraints/quad_frame_remapper_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/quad_frame_remapper/quad_frame_remapper.runs/project1_quad_frame_remapper_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/quad_frame_remapper/quad_frame_remapper.runs/project1_quad_frame_remapper_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1456.855 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.334 . Memory (MB): peak = 1461.059 ; gain = 4.203
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1461.059 ; gain = 710.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1461.059 ; gain = 710.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1461.059 ; gain = 710.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'quad_frame_remapper_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'quad_frame_remapper_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'quad_frame_remapper_gmem0_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'quad_frame_remapper_gmem0_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'quad_frame_remapper_gmem1_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'quad_frame_remapper_gmem1_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'quad_frame_remapper_gmem1_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'quad_frame_remapper_gmem1_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'quad_frame_remapper_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'quad_frame_remapper_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'quad_frame_remapper_gmem0_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'quad_frame_remapper_gmem0_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'quad_frame_remapper_gmem1_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'quad_frame_remapper_gmem1_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'quad_frame_remapper_gmem1_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'quad_frame_remapper_gmem1_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 1461.059 ; gain = 710.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 2     
+	   2 Input   52 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 4     
+	   2 Input   23 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 8     
+	   3 Input   13 Bit       Adders := 1     
+	   3 Input   12 Bit       Adders := 6     
+	   2 Input   12 Bit       Adders := 7     
+	   2 Input   11 Bit       Adders := 4     
+	   2 Input   10 Bit       Adders := 5     
+	   2 Input    9 Bit       Adders := 5     
+	   3 Input    9 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 17    
+	   2 Input    2 Bit       Adders := 22    
+	   2 Input    1 Bit       Adders := 8     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	              144 Bit    Registers := 1     
+	              130 Bit    Registers := 3     
+	              128 Bit    Registers := 13    
+	               97 Bit    Registers := 4     
+	               96 Bit    Registers := 2     
+	               73 Bit    Registers := 2     
+	               64 Bit    Registers := 11    
+	               60 Bit    Registers := 2     
+	               52 Bit    Registers := 2     
+	               35 Bit    Registers := 1     
+	               32 Bit    Registers := 8     
+	               23 Bit    Registers := 2     
+	               20 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 7     
+	               12 Bit    Registers := 4     
+	               11 Bit    Registers := 5     
+	               10 Bit    Registers := 9     
+	                9 Bit    Registers := 13    
+	                8 Bit    Registers := 23    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 12    
+	                2 Bit    Registers := 19    
+	                1 Bit    Registers := 143   
++---RAMs : 
+	             129K Bit	(1023 X 130 bit)          RAMs := 1     
+	              45K Bit	(360 X 128 bit)          RAMs := 2     
+	               8K Bit	(63 X 144 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input  130 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 43    
+	   2 Input   97 Bit        Muxes := 2     
+	   2 Input   73 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 10    
+	   2 Input   52 Bit        Muxes := 2     
+	   2 Input   35 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 3     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   29 Bit        Muxes := 1     
+	   2 Input   28 Bit        Muxes := 1     
+	   3 Input   27 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 3     
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 10    
+	   4 Input   12 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 1     
+	   3 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 9     
+	   4 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 9     
+	   4 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 8     
+	   4 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 14    
+	   2 Input    2 Bit        Muxes := 87    
+	   3 Input    2 Bit        Muxes := 19    
+	   4 Input    2 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 172   
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p1_reg' and it is trimmed from '73' to '72' bits. [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2655]
+WARNING: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p2_reg' and it is trimmed from '73' to '72' bits. [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper_gmem1_m_axi.v:2676]
+WARNING: [Synth 8-3936] Found unconnected internal register 'local_y_reg_520_reg' and it is trimmed from '10' to '9' bits. [c:/project9/project1.srcs/sources_1/bd/project1/ipshared/3580/hdl/verilog/quad_frame_remapper.v:1253]
+DSP Report: Generating DSP mul_ln123_reg_535_reg, operation Mode is: (A*(B:0x168))'.
+DSP Report: register mul_ln123_reg_535_reg is absorbed into DSP mul_ln123_reg_535_reg.
+DSP Report: operator mul_11ns_10ns_19_1_1_U16/tmp_product is absorbed into DSP mul_ln123_reg_535_reg.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module quad_frame_remapper_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module quad_frame_remapper_control_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:16 . Memory (MB): peak = 1503.676 ; gain = 753.113
+---------------------------------------------------------------------------------
+ Sort Area is  mul_ln123_reg_535_reg_0 : 0 0 : 231 231 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++--------------------+--------------------------------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+|Module Name         | RTL Object                                 | PORT A (Depth x Width) | W | R | PORT B (Depth x Width)  | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------+--------------------------------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+|inst                | line_buf_in_U/ram0_reg                     | 360 x 128(READ_FIRST)  | W | R | 360 x 128(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
+|inst/line_buf_out_U | genblk1[1].ram_reg                         | 360 x 128(READ_FIRST)  | W | R |                         |   |   | Port A           | 0      | 2      | 
+|inst/gmem0_m_axi_U  | load_unit_0/buff_rdata/U_fifo_mem/mem_reg  | 1023 x 130(READ_FIRST) | W |   | 1023 x 130(WRITE_FIRST) |   | R | Port A and B     | 0      | 4      | 
+|inst/gmem1_m_axi_U  | store_unit_0/buff_wdata/U_fifo_mem/mem_reg | 63 x 144(READ_FIRST)   | W |   | 63 x 144(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
++--------------------+--------------------------------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|quad_frame_remapper | (A*(B:0x168))' | 12     | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++--------------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:25 ; elapsed = 00:01:32 . Memory (MB): peak = 1656.031 ; gain = 905.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 1676.207 ; gain = 925.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++--------------------+--------------------------------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+|Module Name         | RTL Object                                 | PORT A (Depth x Width) | W | R | PORT B (Depth x Width)  | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------+--------------------------------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+|inst                | line_buf_in_U/ram0_reg                     | 360 x 128(READ_FIRST)  | W | R | 360 x 128(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
+|inst/line_buf_out_U | genblk1[1].ram_reg                         | 360 x 128(READ_FIRST)  | W | R |                         |   |   | Port A           | 0      | 2      | 
+|inst/gmem0_m_axi_U  | load_unit_0/buff_rdata/U_fifo_mem/mem_reg  | 1023 x 130(READ_FIRST) | W |   | 1023 x 130(WRITE_FIRST) |   | R | Port A and B     | 0      | 4      | 
+|inst/gmem1_m_axi_U  | store_unit_0/buff_wdata/U_fifo_mem/mem_reg | 63 x 144(READ_FIRST)   | W |   | 63 x 144(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
++--------------------+--------------------------------------------+------------------------+---+---+-------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/line_buf_in_U/ram0_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buf_in_U/ram0_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buf_in_U/ram0_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buf_in_U/ram0_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buf_in_U/ram0_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buf_in_U/ram0_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buf_in_U/ram0_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buf_in_U/ram0_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buf_out_U/genblk1[1].ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buf_out_U/genblk1[1].ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buf_out_U/genblk1[1].ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/line_buf_out_U/genblk1[1].ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/gmem0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:32 ; elapsed = 00:01:40 . Memory (MB): peak = 1720.129 ; gain = 969.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:41 ; elapsed = 00:01:50 . Memory (MB): peak = 1913.406 ; gain = 1162.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:41 ; elapsed = 00:01:50 . Memory (MB): peak = 1913.406 ; gain = 1162.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:42 ; elapsed = 00:01:50 . Memory (MB): peak = 1913.406 ; gain = 1162.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:42 ; elapsed = 00:01:50 . Memory (MB): peak = 1913.406 ; gain = 1162.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:42 ; elapsed = 00:01:51 . Memory (MB): peak = 1921.258 ; gain = 1170.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:42 ; elapsed = 00:01:51 . Memory (MB): peak = 1921.258 ; gain = 1170.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name   | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[5] | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[2] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[2] | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[2] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|quad_frame_remapper | (A*B)'      | 11     | 9      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++--------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   184|
+|2     |DSP48E1  |     1|
+|3     |LUT1     |   106|
+|4     |LUT2     |   289|
+|5     |LUT3     |  1022|
+|6     |LUT4     |   807|
+|7     |LUT5     |   323|
+|8     |LUT6     |   957|
+|9     |MUXF7    |    96|
+|10    |MUXF8    |    48|
+|11    |RAMB36E1 |    12|
+|15    |SRL16E   |   129|
+|16    |FDRE     |  3934|
+|17    |FDSE     |    20|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:42 ; elapsed = 00:01:51 . Memory (MB): peak = 1921.258 ; gain = 1170.695
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1004 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:20 ; elapsed = 00:01:43 . Memory (MB): peak = 1921.258 ; gain = 1114.453
+Synthesis Optimization Complete : Time (s): cpu = 00:01:43 ; elapsed = 00:01:51 . Memory (MB): peak = 1921.258 ; gain = 1170.695
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.203 . Memory (MB): peak = 1928.848 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 341 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1929.562 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: f6e8e8d1
+INFO: [Common 17-83] Releasing license: Synthesis
+157 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:51 ; elapsed = 00:02:03 . Memory (MB): peak = 1929.562 ; gain = 1404.371
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1929.562 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/quad_frame_remapper/quad_frame_remapper.runs/project1_quad_frame_remapper_0_0_synth_1/project1_quad_frame_remapper_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP project1_quad_frame_remapper_0_0, cache-ID = 74d9ab96038b61d6
+INFO: [Coretcl 2-1174] Renamed 55 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1929.562 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/quad_frame_remapper/quad_frame_remapper.runs/project1_quad_frame_remapper_0_0_synth_1/project1_quad_frame_remapper_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file project1_quad_frame_remapper_0_0_utilization_synth.rpt -pb project1_quad_frame_remapper_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 26 11:50:49 2026...

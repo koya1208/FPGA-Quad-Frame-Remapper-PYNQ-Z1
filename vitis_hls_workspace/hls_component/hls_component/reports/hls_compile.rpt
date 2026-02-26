@@ -1,0 +1,254 @@
+
+
+================================================================
+== Synthesis Summary Report of 'quad_frame_remapper'
+================================================================
++ General Information: 
+    * Date:           Wed Feb 25 19:26:58 2026
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        hls_component
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+----------+---------+-----------+------------+-----+
+    |                      Modules                      | Issue|      |       Latency       | Iteration|         | Trip |          |          |         |           |            |     |
+    |                      & Loops                      | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM   |   DSP   |     FF    |     LUT    | URAM|
+    +---------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+----------+---------+-----------+------------+-----+
+    |+ quad_frame_remapper                              |     -|  0.00|  5798521|  5.799e+07|         -|  5798522|     -|        no|  28 (10%)|  1 (~0%)|  3818 (3%)|  9241 (17%)|    -|
+    | o VITIS_LOOP_91_1                                 |     -|  7.30|  5798520|  5.799e+07|      5369|        -|  1080|        no|         -|        -|          -|           -|    -|
+    |  + quad_frame_remapper_Pipeline_1                 |     -|  0.63|      362|  3.620e+03|         -|      361|     -|    rewind|         -|        -|   11 (~0%)|    64 (~0%)|    -|
+    |   o Loop 1                                        |     -|  7.30|      360|  3.600e+03|         1|        1|   360|       yes|         -|        -|          -|           -|    -|
+    |  + quad_frame_remapper_Pipeline_3                 |     -|  0.00|      363|  3.630e+03|         -|      361|     -|    rewind|         -|        -|  161 (~0%)|    77 (~0%)|    -|
+    |   o Loop 1                                        |     -|  7.30|      361|  3.610e+03|         3|        1|   360|       yes|         -|        -|          -|           -|    -|
+    |  + quad_frame_remapper_Pipeline_4                 |     -|  0.63|      362|  3.620e+03|         -|      361|     -|    rewind|         -|        -|   11 (~0%)|    64 (~0%)|    -|
+    |   o Loop 1                                        |     -|  7.30|      360|  3.600e+03|         1|        1|   360|       yes|         -|        -|          -|           -|    -|
+    |  + quad_frame_remapper_Pipeline_VITIS_LOOP_132_2  |     -|  0.90|     2309|  2.309e+04|         -|     2307|     -|    rewind|         -|        -|  563 (~0%)|   2935 (5%)|    -|
+    |   o VITIS_LOOP_132_2                              |    II|  7.30|     2307|  2.307e+04|         7|        3|   768|       yes|         -|        -|          -|           -|    -|
+    |  + quad_frame_remapper_Pipeline_VITIS_LOOP_146_3  |     -|  0.82|     2309|  2.309e+04|         -|     2307|     -|    rewind|         -|        -|  566 (~0%)|   2959 (5%)|    -|
+    |   o VITIS_LOOP_146_3                              |    II|  7.30|     2307|  2.307e+04|         7|        3|   768|       yes|         -|        -|          -|           -|    -|
+    |  + quad_frame_remapper_Pipeline_7                 |     -|  0.00|      363|  3.630e+03|         -|      361|     -|    rewind|         -|        -|  142 (~0%)|    77 (~0%)|    -|
+    |   o Loop 1                                        |     -|  7.30|      361|  3.610e+03|         3|        1|   360|       yes|         -|        -|          -|           -|    -|
+    |  + quad_frame_remapper_Pipeline_2                 |     -|  0.00|      363|  3.630e+03|         -|      361|     -|    rewind|         -|        -|  142 (~0%)|    77 (~0%)|    -|
+    |   o Loop 1                                        |     -|  7.30|      361|  3.610e+03|         3|        1|   360|       yes|         -|        -|          -|           -|    -|
+    +---------------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+----------+---------+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface   | Read/Write | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|             |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem0 | READ_ONLY  | 128 -> 128 | 64            | 0       | slave  | 0        | 0         | 256          | 16           | 4           | 16          | BRAM=8            |
+| m_axi_gmem1 | WRITE_ONLY | 128 -> 128 | 64            | 0       | slave  | 0        | 0         | 16           | 32           | 16          | 2           | BRAM=8            |
++-------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+-----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register        | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+-----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL            | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER            | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER          | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR          | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | src_1           | 0x10   | 32    | W      | Data signal of src               |                                                                      |
+| s_axi_control | src_2           | 0x14   | 32    | W      | Data signal of src               |                                                                      |
+| s_axi_control | dst_1           | 0x1c   | 32    | W      | Data signal of dst               |                                                                      |
+| s_axi_control | dst_2           | 0x20   | 32    | W      | Data signal of dst               |                                                                      |
+| s_axi_control | size_in_16bytes | 0x28   | 32    | W      | Data signal of size_in_16bytes   |                                                                      |
++---------------+-----------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------------+-----------+---------------+
+| Argument        | Direction | Datatype      |
++-----------------+-----------+---------------+
+| src             | in        | ap_uint<128>* |
+| dst             | out       | ap_uint<128>* |
+| size_in_16bytes | in        | int           |
++-----------------+-----------+---------------+
+
+* SW-to-HW Mapping
++-----------------+---------------+-----------+----------+-------------------------------------------+
+| Argument        | HW Interface  | HW Type   | HW Usage | HW Info                                   |
++-----------------+---------------+-----------+----------+-------------------------------------------+
+| src             | m_axi_gmem0   | interface |          | channel=0                                 |
+| src             | s_axi_control | register  | offset   | name=src_1 offset=0x10 range=32           |
+| src             | s_axi_control | register  | offset   | name=src_2 offset=0x14 range=32           |
+| dst             | m_axi_gmem1   | interface |          | channel=0                                 |
+| dst             | s_axi_control | register  | offset   | name=dst_1 offset=0x1c range=32           |
+| dst             | s_axi_control | register  | offset   | name=dst_2 offset=0x20 range=32           |
+| size_in_16bytes | s_axi_control | register  |          | name=size_in_16bytes offset=0x28 range=32 |
++-----------------+---------------+-----------+----------+-------------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------+--------+-------+-----------+-------------------------------------------------------+
+| HW Interface | Direction | Length | Width | Loop      | Loop Location                                         |
++--------------+-----------+--------+-------+-----------+-------------------------------------------------------+
+| m_axi_gmem0  | read      | 360    | 128   | anonymous | C:/quad_frame_remapper/quad_frame_remapper.cpp:123:9  |
+| m_axi_gmem1  | write     | 360    | 128   | anonymous | C:/quad_frame_remapper/quad_frame_remapper.cpp:107:13 |
+| m_axi_gmem1  | write     | 360    | 128   | anonymous | C:/quad_frame_remapper/quad_frame_remapper.cpp:160:9  |
++--------------+-----------+--------+-------+-----------+-------------------------------------------------------+
+
+* All M_AXI Variable Accesses
++--------------+----------+-------------------------------------------------------+-----------+--------------+--------+-----------------+-------------------------------------------------------+------------+--------------------------------------------------------------------------------------------------------+
+| HW Interface | Variable | Access Location                                       | Direction | Burst Status | Length | Loop            | Loop Location                                         | Resolution | Problem                                                                                                |
++--------------+----------+-------------------------------------------------------+-----------+--------------+--------+-----------------+-------------------------------------------------------+------------+--------------------------------------------------------------------------------------------------------+
+| m_axi_gmem0  | src      | C:/quad_frame_remapper/quad_frame_remapper.cpp:123:9  | read      | Widen Fail   |        | anonymous       | C:/quad_frame_remapper/quad_frame_remapper.cpp:123:9  | 214-353    | Could not widen since type i128 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem0  | src      | C:/quad_frame_remapper/quad_frame_remapper.cpp:123:9  | read      | Fail         |        | VITIS_LOOP_91_1 | C:/quad_frame_remapper/quad_frame_remapper.cpp:91:22  | 214-232    | Access call is in the conditional branch                                                               |
+| m_axi_gmem0  | src      | C:/quad_frame_remapper/quad_frame_remapper.cpp:123:9  | read      | Inferred     | 360    | anonymous       | C:/quad_frame_remapper/quad_frame_remapper.cpp:123:9  |            |                                                                                                        |
+| m_axi_gmem1  | dst      | C:/quad_frame_remapper/quad_frame_remapper.cpp:107:13 | write     | Widen Fail   |        | anonymous       | C:/quad_frame_remapper/quad_frame_remapper.cpp:107:13 | 214-353    | Could not widen since type i128 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem1  | dst      | C:/quad_frame_remapper/quad_frame_remapper.cpp:107:13 | write     | Fail         |        | VITIS_LOOP_91_1 | C:/quad_frame_remapper/quad_frame_remapper.cpp:91:22  | 214-232    | Access call is in the conditional branch                                                               |
+| m_axi_gmem1  | dst      | C:/quad_frame_remapper/quad_frame_remapper.cpp:107:13 | write     | Inferred     | 360    | anonymous       | C:/quad_frame_remapper/quad_frame_remapper.cpp:107:13 |            |                                                                                                        |
+| m_axi_gmem1  | dst      | C:/quad_frame_remapper/quad_frame_remapper.cpp:160:9  | write     | Widen Fail   |        | anonymous       | C:/quad_frame_remapper/quad_frame_remapper.cpp:160:9  | 214-353    | Could not widen since type i128 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem1  | dst      | C:/quad_frame_remapper/quad_frame_remapper.cpp:160:9  | write     | Fail         |        | VITIS_LOOP_91_1 | C:/quad_frame_remapper/quad_frame_remapper.cpp:91:22  | 214-232    | Access call is in the conditional branch                                                               |
+| m_axi_gmem1  | dst      | C:/quad_frame_remapper/quad_frame_remapper.cpp:160:9  | write     | Inferred     | 360    | anonymous       | C:/quad_frame_remapper/quad_frame_remapper.cpp:160:9  |            |                                                                                                        |
++--------------+----------+-------------------------------------------------------+-----------+--------------+--------+-----------------+-------------------------------------------------------+------------+--------------------------------------------------------------------------------------------------------+
+
+    * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------------------+-----+--------+--------------+--------+-----------+---------+
+| Name                                             | DSP | Pragma | Variable     | Op     | Impl      | Latency |
++--------------------------------------------------+-----+--------+--------------+--------+-----------+---------+
+| + quad_frame_remapper                            | 1   |        |              |        |           |         |
+|   add_ln91_fu_266_p2                             |     |        | add_ln91     | add    | fabric    | 0       |
+|   icmp_ln91_fu_272_p2                            |     |        | icmp_ln91    | seteq  | auto      | 0       |
+|   y_2_fu_278_p2                                  |     |        | y_2          | add    | fabric    | 0       |
+|   add_ln95_fu_292_p2                             |     |        | add_ln95     | add    | fabric    | 0       |
+|   is_bottom_fu_297_p2                            |     |        | is_bottom    | setgt  | auto      | 0       |
+|   add_ln98_fu_303_p2                             |     |        | add_ln98     | add    | fabric    | 0       |
+|   local_y_fu_309_p3                              |     |        | local_y      | select | auto_sel  | 0       |
+|   icmp_ln102_fu_317_p2                           |     |        | icmp_ln102   | setlt  | auto      | 0       |
+|   icmp_ln102_1_fu_323_p2                         |     |        | icmp_ln102_1 | setgt  | auto      | 0       |
+|   or_ln102_fu_329_p2                             |     |        | or_ln102     | or     | auto      | 0       |
+|   add_ln120_fu_385_p2                            |     |        | add_ln120    | add    | fabric    | 0       |
+|   src_y_fu_391_p3                                |     |        | src_y        | select | auto_sel  | 0       |
+|   mul_11ns_10ns_19_1_1_U16                       | 1   |        | mul_ln123    | mul    | auto      | 0       |
+|   add_ln123_fu_418_p2                            |     |        | add_ln123    | add    | fabric    | 0       |
+|  + quad_frame_remapper_Pipeline_1                | 0   |        |              |        |           |         |
+|    exitcond2814_fu_56_p2                         |     |        | exitcond2814 | seteq  | auto      | 0       |
+|    empty_31_fu_62_p2                             |     |        | empty_31     | add    | fabric    | 0       |
+|  + quad_frame_remapper_Pipeline_3                | 0   |        |              |        |           |         |
+|    exitcond9_fu_90_p2                            |     |        | exitcond9    | seteq  | auto      | 0       |
+|    empty_fu_96_p2                                |     |        | empty        | add    | fabric    | 0       |
+|  + quad_frame_remapper_Pipeline_4                | 0   |        |              |        |           |         |
+|    exitcond1210_fu_56_p2                         |     |        | exitcond1210 | seteq  | auto      | 0       |
+|    empty_30_fu_62_p2                             |     |        | empty_30     | add    | fabric    | 0       |
+|  + quad_frame_remapper_Pipeline_VITIS_LOOP_132_2 | 0   |        |              |        |           |         |
+|    icmp_ln132_fu_148_p2                          |     |        | icmp_ln132   | seteq  | auto      | 0       |
+|    add_ln132_fu_250_p2                           |     |        | add_ln132    | add    | fabric    | 0       |
+|    add_ln134_fu_174_p2                           |     |        | add_ln134    | add    | fabric    | 0       |
+|    sub_ln140_fu_200_p2                           |     |        | sub_ln140    | sub    | fabric    | 0       |
+|    lshr_ln140_fu_298_p2                          |     |        | lshr_ln140   | lshr   | auto_pipe | 0       |
+|    sub_ln140_1_fu_315_p2                         |     |        | sub_ln140_1  | sub    | fabric    | 0       |
+|    add_ln140_fu_321_p2                           |     |        | add_ln140    | add    | fabric    | 0       |
+|    shl_ln140_fu_335_p2                           |     |        | shl_ln140    | shl    | auto_pipe | 0       |
+|    shl_ln140_1_fu_385_p2                         |     |        | shl_ln140_1  | shl    | auto_pipe | 0       |
+|    add_ln141_fu_225_p2                           |     |        | add_ln141    | add    | fabric    | 0       |
+|    lshr_ln141_fu_362_p2                          |     |        | lshr_ln141   | lshr   | auto_pipe | 0       |
+|    add_ln141_1_fu_396_p2                         |     |        | add_ln141_1  | add    | fabric    | 0       |
+|    shl_ln141_fu_409_p2                           |     |        | shl_ln141    | shl    | auto_pipe | 0       |
+|    shl_ln141_1_fu_460_p2                         |     |        | shl_ln141_1  | shl    | auto_pipe | 0       |
+|    add_ln142_fu_255_p2                           |     |        | add_ln142    | add    | fabric    | 0       |
+|    lshr_ln142_fu_436_p2                          |     |        | lshr_ln142   | lshr   | auto_pipe | 0       |
+|    add_ln142_1_fu_471_p2                         |     |        | add_ln142_1  | add    | fabric    | 0       |
+|    shl_ln142_fu_487_p2                           |     |        | shl_ln142    | shl    | auto_pipe | 0       |
+|    shl_ln142_1_fu_505_p2                         |     |        | shl_ln142_1  | shl    | auto_pipe | 0       |
+|  + quad_frame_remapper_Pipeline_VITIS_LOOP_146_3 | 0   |        |              |        |           |         |
+|    icmp_ln146_fu_148_p2                          |     |        | icmp_ln146   | seteq  | auto      | 0       |
+|    add_ln146_fu_260_p2                           |     |        | add_ln146    | add    | fabric    | 0       |
+|    add_ln148_fu_174_p2                           |     |        | add_ln148    | add    | fabric    | 0       |
+|    sub_ln154_fu_200_p2                           |     |        | sub_ln154    | sub    | fabric    | 0       |
+|    add_ln154_fu_210_p2                           |     |        | add_ln154    | add    | fabric    | 0       |
+|    lshr_ln154_fu_308_p2                          |     |        | lshr_ln154   | lshr   | auto_pipe | 0       |
+|    sub_ln154_1_fu_325_p2                         |     |        | sub_ln154_1  | sub    | fabric    | 0       |
+|    add_ln154_1_fu_335_p2                         |     |        | add_ln154_1  | add    | fabric    | 0       |
+|    shl_ln154_fu_349_p2                           |     |        | shl_ln154    | shl    | auto_pipe | 0       |
+|    shl_ln154_1_fu_399_p2                         |     |        | shl_ln154_1  | shl    | auto_pipe | 0       |
+|    add_ln155_fu_235_p2                           |     |        | add_ln155    | add    | fabric    | 0       |
+|    lshr_ln155_fu_376_p2                          |     |        | lshr_ln155   | lshr   | auto_pipe | 0       |
+|    add_ln155_1_fu_410_p2                         |     |        | add_ln155_1  | add    | fabric    | 0       |
+|    shl_ln155_fu_423_p2                           |     |        | shl_ln155    | shl    | auto_pipe | 0       |
+|    shl_ln155_1_fu_474_p2                         |     |        | shl_ln155_1  | shl    | auto_pipe | 0       |
+|    add_ln156_fu_265_p2                           |     |        | add_ln156    | add    | fabric    | 0       |
+|    lshr_ln156_fu_450_p2                          |     |        | lshr_ln156   | lshr   | auto_pipe | 0       |
+|    add_ln156_1_fu_485_p2                         |     |        | add_ln156_1  | add    | fabric    | 0       |
+|    shl_ln156_fu_501_p2                           |     |        | shl_ln156    | shl    | auto_pipe | 0       |
+|    shl_ln156_1_fu_519_p2                         |     |        | shl_ln156_1  | shl    | auto_pipe | 0       |
+|  + quad_frame_remapper_Pipeline_7                | 0   |        |              |        |           |         |
+|    exitcond2713_fu_97_p2                         |     |        | exitcond2713 | seteq  | auto      | 0       |
+|    empty_fu_103_p2                               |     |        | empty        | add    | fabric    | 0       |
+|  + quad_frame_remapper_Pipeline_2                | 0   |        |              |        |           |         |
+|    exitcond2915_fu_97_p2                         |     |        | exitcond2915 | seteq  | auto      | 0       |
+|    empty_fu_103_p2                               |     |        | empty        | add    | fabric    | 0       |
++--------------------------------------------------+-----+--------+--------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-----------------------+--------------+-----------+------+------+--------+--------------+------+---------+------------------+
+| Name                  | Usage        | Type      | BRAM | URAM | Pragma | Variable     | Impl | Latency | Bitwidth, Depth, |
+|                       |              |           |      |      |        |              |      |         | Banks            |
++-----------------------+--------------+-----------+------+------+--------+--------------+------+---------+------------------+
+| + quad_frame_remapper |              |           | 28   | 0    |        |              |      |         |                  |
+|   control_s_axi_U     | interface    | s_axilite |      |      |        |              |      |         |                  |
+|   gmem0_m_axi_U       | interface    | m_axi     | 8    |      |        |              |      |         |                  |
+|   gmem1_m_axi_U       | interface    | m_axi     | 8    |      |        |              |      |         |                  |
+|   line_buf_in_U       | rom_np array |           | 8    |      |        | line_buf_in  | auto | 1       | 128, 360, 1      |
+|   line_buf_out_U      | ram_1p array |           | 8    |      |        | line_buf_out | auto | 1       | 128, 360, 1      |
++-----------------------+--------------+-----------+------+------+--------+--------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| Type      | Options                                                                                                 | Location                                                                 |
++-----------+---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| INTERFACE | m_axi port=src offset=slave bundle=gmem0 depth=388800 max_read_burst_length=256 num_read_outstanding=4  | ../../quad_frame_remapper.cpp:54 in quad_frame_remapper, src             |
+| INTERFACE | m_axi port=dst offset=slave bundle=gmem1 depth=388800 max_write_burst_length=32 num_write_outstanding=2 | ../../quad_frame_remapper.cpp:55 in quad_frame_remapper, dst             |
+| INTERFACE | s_axilite port=src bundle=control                                                                       | ../../quad_frame_remapper.cpp:57 in quad_frame_remapper, src             |
+| INTERFACE | s_axilite port=dst bundle=control                                                                       | ../../quad_frame_remapper.cpp:58 in quad_frame_remapper, dst             |
+| INTERFACE | s_axilite port=size_in_16bytes bundle=control                                                           | ../../quad_frame_remapper.cpp:59 in quad_frame_remapper, size_in_16bytes |
+| INTERFACE | s_axilite port=return bundle=control                                                                    | ../../quad_frame_remapper.cpp:60 in quad_frame_remapper, return          |
++-----------+---------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+
+

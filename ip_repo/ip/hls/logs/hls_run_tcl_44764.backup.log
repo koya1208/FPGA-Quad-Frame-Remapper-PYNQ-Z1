@@ -1,0 +1,234 @@
+  **** HLS Build v2025.1 6135595
+Sourcing Tcl script 'C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/script.tcl'
+INFO: [HLS 200-1510] Running: open_project pixel_pack 
+WARNING: [HLS 200-2182] The 'pixel_pack' project will not automatically appear within Vitis IDE workspaces and is meant only for TCL batch use.  Please use open_component instead of open_project/open_solution to generate Vitis IDE compatible component files and directory structure.
+Resolution: For help on HLS 200-2182 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-2182.html
+INFO: [HLS 200-10] Creating and opening solution 'C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack'.
+INFO: [HLS 200-1510] Running: set_top pixel_pack 
+INFO: [HLS 200-1510] Running: add_files pixel_pack/pixel_pack.cpp 
+INFO: [HLS 200-10] Adding design file 'pixel_pack/pixel_pack.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb pixel_pack/pixel_pack_test.cpp 
+INFO: [HLS 200-10] Adding test bench file 'pixel_pack/pixel_pack_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 
+INFO: [HLS 200-10] Creating and opening solution 'C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 7 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.4 seconds; current allocated memory: 139.523 MB.
+INFO: [HLS 200-10] Analyzing design file 'pixel_pack/pixel_pack.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 4.348 seconds; current allocated memory: 142.539 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 2,577 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 694 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 629 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 632 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 632 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 600 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 600 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 600 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 600 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,328 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,329 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,255 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 884 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 884 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 657 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 331 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/syn/report/csynth_design_size.rpt:2)
+WARNING: [HLS 214-387] Ignore depth setting for top argument 'stream_in_24' (pixel_pack/pixel_pack.cpp:8:0)
+WARNING: [HLS 214-387] Ignore depth setting for top argument 'stream_out_32' (pixel_pack/pixel_pack.cpp:8:0)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_27_2' is marked as complete unroll implied by the pipeline pragma (pixel_pack/pixel_pack.cpp:27:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_37_3' is marked as complete unroll implied by the pipeline pragma (pixel_pack/pixel_pack.cpp:37:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_67_6' is marked as complete unroll implied by the pipeline pragma (pixel_pack/pixel_pack.cpp:67:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_88_8' is marked as complete unroll implied by the pipeline pragma (pixel_pack/pixel_pack.cpp:88:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_105_10' is marked as complete unroll implied by the pipeline pragma (pixel_pack/pixel_pack.cpp:105:23)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_27_2' (pixel_pack/pixel_pack.cpp:27:21) in function 'pixel_pack' completely with a factor of 4 (pixel_pack/pixel_pack.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_37_3' (pixel_pack/pixel_pack.cpp:37:22) in function 'pixel_pack' completely with a factor of 3 (pixel_pack/pixel_pack.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_67_6' (pixel_pack/pixel_pack.cpp:67:21) in function 'pixel_pack' completely with a factor of 4 (pixel_pack/pixel_pack.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_88_8' (pixel_pack/pixel_pack.cpp:88:21) in function 'pixel_pack' completely with a factor of 2 (pixel_pack/pixel_pack.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_105_10' (pixel_pack/pixel_pack.cpp:105:23) in function 'pixel_pack' completely with a factor of 2 (pixel_pack/pixel_pack.cpp:8:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.239 seconds; current allocated memory: 144.488 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 144.488 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 149.191 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.043 seconds; current allocated memory: 151.242 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.091 seconds; current allocated memory: 173.020 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.129 seconds; current allocated memory: 210.637 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pixel_pack' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_pack_Pipeline_VITIS_LOOP_101_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_101_9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 2, loop 'VITIS_LOOP_101_9'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.177 seconds; current allocated memory: 213.973 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 215.043 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_pack_Pipeline_VITIS_LOOP_84_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_84_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 2, Final II = 2, Depth = 2, loop 'VITIS_LOOP_84_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 215.266 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.015 seconds; current allocated memory: 215.348 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_pack_Pipeline_VITIS_LOOP_62_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_62_5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 4, Final II = 4, Depth = 4, loop 'VITIS_LOOP_62_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.036 seconds; current allocated memory: 215.879 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 215.973 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_pack_Pipeline_VITIS_LOOP_47_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_47_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_47_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.026 seconds; current allocated memory: 216.113 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.015 seconds; current allocated memory: 216.180 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_pack_Pipeline_VITIS_LOOP_21_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_21_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 4, Final II = 4, Depth = 6, loop 'VITIS_LOOP_21_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.035 seconds; current allocated memory: 216.828 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.84 seconds; current allocated memory: 216.887 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_pack' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 217.082 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 217.172 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_pack_Pipeline_VITIS_LOOP_101_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_pack_Pipeline_VITIS_LOOP_101_9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.044 seconds; current allocated memory: 218.801 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_pack_Pipeline_VITIS_LOOP_84_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_pack_Pipeline_VITIS_LOOP_84_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.132 seconds; current allocated memory: 220.547 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_pack_Pipeline_VITIS_LOOP_62_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_pack_Pipeline_VITIS_LOOP_62_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 221.316 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_pack_Pipeline_VITIS_LOOP_47_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_pack_Pipeline_VITIS_LOOP_47_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.149 seconds; current allocated memory: 222.668 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_pack_Pipeline_VITIS_LOOP_21_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'pixel_pack_Pipeline_VITIS_LOOP_21_1' pipeline 'VITIS_LOOP_21_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_pack_Pipeline_VITIS_LOOP_21_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.104 seconds; current allocated memory: 223.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_pack' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_pack/stream_in_24_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_pack/stream_in_24_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_pack/stream_in_24_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_pack/stream_in_24_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_pack/stream_in_24_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_pack/stream_out_32_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_pack/stream_out_32_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_pack/stream_out_32_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_pack/stream_out_32_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_pack/stream_out_32_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_pack/mode' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_pack/alpha' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on function 'pixel_pack' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Bundling port 'mode' and 'alpha' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_pack'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.465 seconds; current allocated memory: 226.551 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.531 seconds; current allocated memory: 230.809 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.954 seconds; current allocated memory: 234.465 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for pixel_pack.
+INFO: [VLOG 209-307] Generating Verilog RTL for pixel_pack.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 218.26 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:21; Allocated memory: 95.234 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -description Pixel Packing from 24-bit to 32-bit -display_name Pixel Pack 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Tue Aug 19 23:11:16 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/solution1_data.json outdir=C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/impl/ip srcdir=C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1 ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/impl/ip/misc
+INFO: Copied 16 verilog file(s) to C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/impl/ip/hdl/verilog
+INFO: Copied 9 vhdl file(s) to C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/impl/ip/drivers
+INFO: Import ports from HDL: C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/impl/ip/hdl/vhdl/pixel_pack.vhd (pixel_pack)
+INFO: Add axi4lite interface s_axi_control
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add axi4stream interface stream_in_24
+INFO: Add axi4stream interface stream_out_32
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/impl/ip/component.xml
+INFO: Created IP archive C:/Users/blaza/PYNQ/boards/ip/hls/pixel_pack/solution1/impl/ip/xilinx_com_hls_pixel_pack_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 19 23:11:24 2025...
+INFO: [HLS 200-802] Generated output file pixel_pack/solution1/impl/export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:09; Allocated memory: 5.098 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 3 seconds. Total elapsed time: 33.126 seconds; peak allocated memory: 239.566 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 34s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

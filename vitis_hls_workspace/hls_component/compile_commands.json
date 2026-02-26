@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\quad_frame_remapper\\vitis_hls_workspace\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=quad_frame_remapper",
+      "-c",
+      "C:/quad_frame_remapper/quad_frame_remapper.cpp"
+    ],
+    "file": "C:/quad_frame_remapper/quad_frame_remapper.cpp"
+  },
+  {
+    "directory": "C:\\quad_frame_remapper\\vitis_hls_workspace\\hls_component",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "C:/quad_frame_remapper/quad_frame_remapper_tb.cpp"
+    ],
+    "file": "C:/quad_frame_remapper/quad_frame_remapper_tb.cpp"
+  }
+]

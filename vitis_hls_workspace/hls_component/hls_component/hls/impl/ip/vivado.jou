@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Feb 25 19:27:31 2026
+# Process ID         : 40028
+# Current directory  : C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/impl/ip/vivado.log
+# Journal file       : C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/impl/ip\vivado.jou
+# Running On         : koyanagi
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 PRO 8840HS w/ Radeon 780M Graphics 
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 29706 MB
+# Swap memory        : 18253 MB
+# Total Virtual      : 47960 MB
+# Available Virtual  : 10945 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

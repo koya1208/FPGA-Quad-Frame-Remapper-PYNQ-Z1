@@ -1,0 +1,67 @@
+---
+MainSourceFile:  'C:/quad_frame_remapper/vitis_hls_workspace/hls_component/hls_component/hls/.autopilot/db/quad_frame_remapper.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp'
+        Offset:          279723
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp'
+        Offset:          280189
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp'
+        Offset:          280656
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        'C:\Xilinx\2025.1\Vitis\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp'
+        Offset:          575126
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_91_1:  '
+    FileOffset:      91
+    FilePath:        'C:\quad_frame_remapper\quad_frame_remapper.cpp'
+    Replacements:    
+      - FilePath:        'C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp'
+        Offset:          970930
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_91_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_132_2:  '
+    FileOffset:      132
+    FilePath:        'C:\quad_frame_remapper\quad_frame_remapper.cpp'
+    Replacements:    
+      - FilePath:        'C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp'
+        Offset:          971701
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_132_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_146_3:  '
+    FileOffset:      146
+    FilePath:        'C:\quad_frame_remapper\quad_frame_remapper.cpp'
+    Replacements:    
+      - FilePath:        'C:\quad_frame_remapper\vitis_hls_workspace\hls_component\hls_component\hls\.autopilot\db\quad_frame_remapper.pp.0.cpp'
+        Offset:          972007
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_146_3: '
+...

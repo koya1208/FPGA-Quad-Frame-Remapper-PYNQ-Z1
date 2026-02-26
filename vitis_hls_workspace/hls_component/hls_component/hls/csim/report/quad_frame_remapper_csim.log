@@ -1,0 +1,8 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../../../quad_frame_remapper_tb.cpp in debug mode
+   Generating csim.exe
+--- Starting C Simulation for image_quad_scale ---
+--- C Simulation PASSED! ---
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
