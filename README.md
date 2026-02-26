@@ -34,7 +34,7 @@ HDMI出力
 ## PC入力画面（HDMI入力）
 
 <p align="center">
-  <img src="images/S__102498311" width="800">
+  <img src="images/input.jpg" width="800">
 </p>
 
 PCから入力された1920×1080のフルHD映像。
@@ -44,7 +44,7 @@ PCから入力された1920×1080のフルHD映像。
 ## 外部ディスプレイ出力（Quad Frame Remapper適用後）
 
 <p align="center">
-  <img src="images/S__102498312" width="800">
+  <img src="images/output.jpg" width="800">
 </p>
 
 画面を4分割し、各象限を0.8倍に縮小して中央配置した出力結果。
