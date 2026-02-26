@@ -10,21 +10,21 @@ PCから入力された1920×1080のHDMI映像をDDRメモリへ格納し、自�
 
 ## 処理フロー
 HDMI入力
-↓
+→
 dvi2rgb
-↓
+→
 Video In to AXI4-Stream
-↓
+→
 VDMA (S2MM) → DDR
-↓
+→
 自作HLS IP（quad_frame_remapper）
-↓
+→
 VDMA (MM2S)
-↓
+→
 AXI4-Stream to Video Out
-↓
+→
 rgb2dvi
-↓
+→
 HDMI出力
 
 
