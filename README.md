@@ -23,29 +23,6 @@ rgb2dvi
 →
 HDMI出力
 
-
----
-
-# 実行結果
-## PC入力画面（HDMI入力）
-
-<p align="center">
-  <img src="image/input.jpg" width="800">
-</p>
-
-PCから入力された1920×1080のフルHD映像。
-
----
-
-## 外部ディスプレイ出力（Quad Frame Remapper適用後）
-
-<p align="center">
-  <img src="image/output.jpg" width="800">
-</p>
-
-画面を4分割し、各象限を0.8倍に縮小して中央配置した出力結果。
-余白部分は黒で埋められている。
-
 ---
 
 # 開発環境
@@ -100,6 +77,29 @@ PCから入力された1920×1080のフルHD映像。
    PYNQ-Z1 HDMI出力 → 外部ディスプレイ に接続  
 9. PYNQ-Z1の電源を入れる。 
 10. Vitis上で実行する。4分割縮小映像が表示される。  
+
+---
+
+# 実行結果
+## PC入力画面（HDMI入力）
+
+<p align="center">
+  <img src="image/input.jpg" width="800">
+</p>
+
+PCから入力された1920×1080のフルHD映像。
+
+---
+
+## 外部ディスプレイ出力（Quad Frame Remapper適用後）
+
+<p align="center">
+  <img src="image/output.jpg" width="800">
+</p>
+
+画面を4分割し、各象限を0.8倍に縮小して中央配置した出力結果。
+余白部分は黒で埋められている。
+
 
 ---
 
