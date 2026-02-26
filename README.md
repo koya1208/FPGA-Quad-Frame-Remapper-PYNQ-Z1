@@ -10,21 +10,21 @@ PCから入力された1920×1080のHDMI映像をDDRメモリへ格納し、自�
 
 ## 処理フロー
 HDMI入力
-↓
+→
 dvi2rgb
-↓
+→
 Video In to AXI4-Stream
-↓
+→
 VDMA (S2MM) → DDR
-↓
+→
 自作HLS IP（quad_frame_remapper）
-↓
+→
 VDMA (MM2S)
-↓
+→
 AXI4-Stream to Video Out
-↓
+→
 rgb2dvi
-↓
+→
 HDMI出力
 
 
@@ -34,7 +34,7 @@ HDMI出力
 ## PC入力画面（HDMI入力）
 
 <p align="center">
-  <img src="images/input.jpg" width="800">
+  <img src="images/S__102498311" width="800">
 </p>
 
 PCから入力された1920×1080のフルHD映像。
@@ -44,7 +44,7 @@ PCから入力された1920×1080のフルHD映像。
 ## 外部ディスプレイ出力（Quad Frame Remapper適用後）
 
 <p align="center">
-  <img src="images/output.jpg" width="800">
+  <img src="images/S__102498312" width="800">
 </p>
 
 画面を4分割し、各象限を0.8倍に縮小して中央配置した出力結果。
